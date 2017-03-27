@@ -20,4 +20,16 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  header:
+    name: "See shell material for bath"
+    text: "Wanna your own bath? Helthy see shell material you"
+  menu:
+    main:     "Main"
+    catalog:  "Catalog"
+    about_p:  "Product description"
+    practice: "Practice"
+    useful:   "Useful properties"
+    price:    "Price"
+    contacts: "Contacts"
+    map:      "How to find us"
+    info:     "About us"
