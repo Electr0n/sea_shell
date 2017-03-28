@@ -15,7 +15,120 @@
 </head>
 <body>
 <!-- page's content -->
-<%= yield %>
+<!-- wraping for footer -->
+<div class="wrap">
+  <div class="jumbotron">
+    <h1 class="text-center"><%= t 'header.name' %></h1>      
+    <p class="text-center"><%= t 'header.text' %></p>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- side menu -->
+      <div class="col-sm-3">
+        <div class="panel-group" id="accordion">
+          <!-- main link -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a href="#main">
+                  <%= t 'menu.main' %>
+                </a>
+              </h4>
+            </div>
+          </div>
+          <!-- catalog -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                  <%= t 'menu.catalog' %>
+                </a>
+              </h4>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <a href="#type1">type1 </a><span class="badge">12</span>
+                </li>
+                <li class="list-group-item">
+                  <a href="#type2">type2 </a><span class="badge">5</span>
+                </li>
+                <li class="list-group-item">
+                  <a href="#type3">type3 </a><span class="badge">3</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- about product -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                  <%= t 'menu.about_p' %>
+                </a>
+              </h4>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <a href="#usability"><%= t 'menu.practice' %></a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#prop"><%= t 'menu.useful' %></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- price -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <%= link_to price_path, t ('menu.price') %>
+              </h4>
+            </div>
+          </div>
+          <!-- contacts -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                  <%= t 'menu.contacts' %>
+                </a>
+              </h4>
+            </div>
+            <div id="collapse5" class="panel-collapse collapse">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <a href="#place"><%= t 'menu.map' %></a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#about"><%= t 'menu.info' %></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- content -->
+      <%= yield %>
+
+    </div>
+  </div>
+</div>
+
+<!-- footer -->
+
+<div class="navbar navbar-default navbar-sticky-bottom" id="footer">
+  <div class="raw">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+      <p class="navbar-text">© 2017 - Site Built By <a href="https://vk.com/electr_on" target="_blank" >Skorodumov Eugene</a>
+      </p>
+    </div>
+    <div class="col-sm-3"></div>
+  </div>
+</div>
 
 </body>
 </html>
