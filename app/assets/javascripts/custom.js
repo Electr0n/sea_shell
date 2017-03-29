@@ -11,16 +11,4 @@ $(document).ready(function(){
       x.parent().addClass("active");
       x.parent().parent().parent().addClass("in");
     }
-  // $('a[href="' + p + '"]').click(function(){
-  //   alert('hey');
-  //   if (x.parent().prop('tagName') == "H4")
-  //     {
-  //       x.parent().parent().addClass("active")
-  //     }
-  //   else
-  //     {
-  //       x.parent().addClass("active");
-  //       x.parent().parent().parent().addClass("in");
-  //     }
-  // });
 });
