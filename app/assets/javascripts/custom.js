@@ -5,3 +5,13 @@
 //     $('#footer').css("margin-top", (docH - contentH) + 'px');
 //   }
 // });
+
+$(document).ready(function(){
+  $(".panel.panel-default").find("a").click(function(){
+    if ($(this).attr('href').indexOf("collapse") < 0) {
+      window.location.hash = ($(this).attr('href'));
+      $(this).parent().parent().addClass('active');
+      $(".in").removeClass('in');
+    }
+  });
+});
