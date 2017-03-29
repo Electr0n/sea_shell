@@ -1,0 +1,83 @@
+<div class="col-sm-3">
+  <div class="panel-group" id="accordion">
+    <!-- main link -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <%= link_to t('menu.main'), root_path %>
+        </h4>
+      </div>
+    </div>
+    <!-- catalog -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+            <%= t 'menu.catalog' %>
+          </a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <a href="#type1">type1 </a><span class="badge">12</span>
+          </li>
+          <li class="list-group-item">
+            <a href="#type2">type2 </a><span class="badge">5</span>
+          </li>
+          <li class="list-group-item">
+            <a href="#type3">type3 </a><span class="badge">3</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- about product -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+            <%= t 'menu.about_p' %>
+          </a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <%= link_to t('menu.practice'), usability_path %>
+          </li>
+          <li class="list-group-item">
+            <%= link_to t('menu.useful'), prop_path %>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- price -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <%= link_to t('menu.price'), price_path %>
+        </h4>
+      </div>
+    </div>
+    <!-- contacts -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+            <%= t 'menu.contacts' %>
+          </a>
+        </h4>
+      </div>
+      <div id="collapse5" class="panel-collapse collapse">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <%= link_to t('menu.map'), map_path %>
+          </li>
+          <li class="list-group-item">
+            <%= link_to t('menu.info'), info_path %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

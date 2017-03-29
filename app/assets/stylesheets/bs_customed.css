@@ -21,3 +21,6 @@ body {
 .list-group-item.active {
   background-color: #dff0d8 !important;
 }
+.panel-heading.active {
+  background-color: #dff0d8 !important;
+}

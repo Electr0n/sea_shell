@@ -4,7 +4,11 @@ Rails.application.routes.draw do
 
   root to: 'application#index'
 
-  get '/price' => 'application#price'
+  get '/price'      => 'application#price'
+  get '/prop'       => 'application#prop'
+  get '/usability'  => 'application#usability'
+  get '/map'        => 'application#map'
+  get '/info'       => 'application#info'
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 

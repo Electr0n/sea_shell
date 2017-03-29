@@ -1,7 +1,26 @@
-// $(document).ready(function() {
-//   var docH = $(window).height();
-//   var contentH = $('#footer').position().top + $('#footer').height();
-//   if (contentH < docH) {
-//     $('#footer').css("margin-top", (docH - contentH) + 'px');
-//   }
-// });
+$(document).ready(function(){
+  var p = window.location.pathname;
+  // add active class to current link && open accordion
+  var x = $('a[href="' + p + '"]');
+  if (x.parent().prop('tagName') == "H4")
+    {
+      x.parent().parent().addClass("active")
+    }
+  else
+    {
+      x.parent().addClass("active");
+      x.parent().parent().parent().addClass("in");
+    }
+  // $('a[href="' + p + '"]').click(function(){
+  //   alert('hey');
+  //   if (x.parent().prop('tagName') == "H4")
+  //     {
+  //       x.parent().parent().addClass("active")
+  //     }
+  //   else
+  //     {
+  //       x.parent().addClass("active");
+  //       x.parent().parent().parent().addClass("in");
+  //     }
+  // });
+});
