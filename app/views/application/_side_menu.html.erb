@@ -1,0 +1,88 @@
+<!-- pills - data-toggle="pill" href="#type1" && content-->
+<div class="col-sm-3">
+  <div class="panel-group" id="accordion">
+    <!-- main link -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="pill" href="#main">
+            <%= t 'menu.main' %>
+          </a>
+        </h4>
+      </div>
+    </div>
+    <!-- catalog -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+            <%= t 'menu.catalog' %>
+          </a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <a data-toggle="pill" href="#type1">type1 </a><span class="badge">12</span>
+          </li>
+          <li class="list-group-item">
+            <a data-toggle="pill" href="#type2">type2 </a><span class="badge">5</span>
+          </li>
+          <li class="list-group-item">
+            <a data-toggle="pill" href="#type3">type3 </a><span class="badge">3</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- about product -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+            <%= t 'menu.about_p' %>
+          </a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <a data-toggle="pill" href="#usability"><%= t 'menu.practice' %></a>
+          </li>
+          <li class="list-group-item">
+            <a data-toggle="pill" href="#prop"><%= t 'menu.useful' %></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- price -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="pill" href="#price">
+            <%= t 'menu.price' %>
+          </a>
+        </h4>
+      </div>
+    </div>
+    <!-- contacts -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+            <%= t 'menu.contacts' %>
+          </a>
+        </h4>
+      </div>
+      <div id="collapse5" class="panel-collapse collapse">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <a data-toggle="pill" href="#place"><%= t 'menu.map' %></a>
+          </li>
+          <li class="list-group-item">
+            <a data-toggle="pill" href="#about"><%= t 'menu.info' %></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
