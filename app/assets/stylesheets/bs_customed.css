@@ -27,9 +27,17 @@ body {
 .panel-heading.active {
   background-color: #dff0d8 !important;
 }
-.phone_img{
+.phone-img{
   width: 40px;
   height: 40px;
+  margin: auto!;
+}
+.row.row-header{
+  margin: 0px;
+}
+.logo{
+  width: 140px;
+  height: 140px;
 }
 /*Jumbatron main text*/
 .text-focus-in {
