@@ -1,4 +1,38 @@
 <div class="jumbotron">
-  <h1 class="text-center"><%= t 'header.name' %></h1>      
-  <p class="text-center"><%= t 'header.text' %></p>
+  <div class="row row-header">
+    <div class="col-sm-2 text-right">
+      <img src="/img/logo.png" class="logo">
+    </div>
+    <div class="col-sm-7">
+      <h1 class="text-center text-focus-in"><%= t 'header.name' %></h1>      
+      <p class="text-center"><%= t 'header.text' %></p>
+    </div>
+    <div class="col-sm-3">
+      <div class="col-sm-12 text-center">
+        <img src="/img/phone.ico" class="wobble-hor-bottom phone-img">
+      </div>
+      <div class="col-sm-12 text-center">
+        <h5><i><%= t('header.phone1') %></i></h5>
+        <h5><i><%= t('header.phone2') %></i></h5>
+        <h5><i><%= t('header.phone3') %></i></h5>
+      </div>
+    </div>
+  </div>
 </div>
+
+<!-- <div class="jumbotron">
+  <h1 class="text-center text-focus-in"><%= t 'header.name' %></h1>      
+  <p class="text-center"><%= t 'header.text' %></p>
+  <div class="phone-box">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <img src="/img/phone.ico" class="wobble-hor-bottom phone-img">
+      </div>
+    </div>
+    <div class="row">
+      <h5><i><%= t('header.phone1') %></i></h5>
+      <h5><i><%= t('header.phone2') %></i></h5>
+      <h5><i><%= t('header.phone3') %></i></h5>
+    </div>
+  </div>
+</div> -->
